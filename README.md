@@ -20,3 +20,5 @@ Root user - usr/sbin
 6. configure all plugin 
 7. use the plugin in the 
 
+check service is running - sudo service jenkins status
+
