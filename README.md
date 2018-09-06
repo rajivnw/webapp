@@ -36,3 +36,10 @@ docker tag rajivnwli/myapache:1.0 rajivnwli/myapache:latest
 docker push rajivnwli/myapache:1.0
 docker run -d -p 800:80 -v testmuapache_var_log:/var/log --name testmyapache rajivnwli/myapache:1.0
 
+----------------------------Docker-------------------
+sudo service docker start
+docker build -t rajivnwli/myphp:1.0 .
+docker tag  rajivnwli/myphp:1.0 rajivnwli/myphp:latest
+docker push rajivnwli/myphp:1.0
+docker run -d -p 800:80 -v testmyphp_var_log:/var/log --name testmyphp rajivnwli/myphp:1.0
+
