@@ -22,3 +22,17 @@ Root user - usr/sbin
 
 check service is running - sudo service jenkins status
 
+------------------Docker-------------
+sudo yum -y install docker
+   
+sudo service docker start
+udo chkconfig docker on
+
+docker build -t rajivnwli/myapache:1.0 .
+
+docker tag  rajivnwli/myapach:1.0 rajivnwli/myapach:latest
+docker tag rajivnwli/myapache:1.0 rajivnwli/myapache:latest
+  
+docker push rajivnwli/myapache:1.0
+docker run -d -p 800:80 -v testmuapache_var_log:/var/log --name testmyapache rajivnwli/myapache:1.0
+
