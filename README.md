@@ -43,3 +43,24 @@ docker tag  rajivnwli/myphp:1.0 rajivnwli/myphp:latest
 docker push rajivnwli/myphp:1.0
 docker run -d -p 800:80 -v testmyphp_var_log:/var/log --name testmyphp rajivnwli/myphp:1.0
 
+--------------------------
+docker run -dit ubuntu:18.04
+docker exec -it blissful_booth /bin/bash
+apt-get install
+
+FROM ubuntu:18.04
+MAINTAINER  RAJIV.NAWALI@GMAIL.COM
+
+ENV TZ=America/Los_Angeles
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get install -y nginx
+RUN apt-get install php -y
+RUN apt-get install -y php-gd php-mysql
+EXPOSE 80
+ADD code /var/www/html
+ENV BACKENDLB=test
+CMD ["nginx", "-g", "daemon off;"]
+
+
