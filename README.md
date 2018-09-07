@@ -67,5 +67,20 @@ https://drive.google.com/drive/u/0/folders/1zGjwkaR0nr9iqJcot7XBOyspzCf6VwP3
 
 mohan@y2ytech.com
 
+1. OS fundamentals
+2. Shell scripts
+3. All major platforms [Linux Project]
+4. cloud - compute(VM,Docker,CAAS), Storage, netwrok databases,queqe, hadoop, iam,monitoring login
+5. DevOps Tools - SCM,Build, Docker/VM, Deployent.
+6. 4 archateture
+
+web technology work flow
+python work flow
+Ruby
+Hadoop
+java
+96110046506
+
+
 
 
